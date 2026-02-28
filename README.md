@@ -1,4 +1,16 @@
-# Antigravity 連携用 Fusion 360 MCP サーバー 仕様書
+# Fusion MCP Server for Antigravity
+
+**バージョン: 0.7.80 (Beta) ファイル連携バージョン**
+
+このプロジェクトは、**Antigravity**がAutodesk Fusion を直接操作するためのModel Context Protocol (MCP)サーバーです。このツールをAntigravityに追加することで、チャットのプロンプトを通じて3Dモデルの作成、編集、情報取得が可能になります。
+
+このサーバーは、Fusion 内で動作する[対応するPythonアドイン fusion_mcp_server](<https://github.com/tomo1230/fusion_mcp_server>)と連携して機能します。
+
+- **作者:** Kanbara Tomonori
+- **X (旧Twitter):** [@tomo1230](https://x.com/tomo1230)
+- **ライセンス:** 本ソースコードはプロプライエタリかつ機密情報です。無断での複製、修正、配布、使用は固く禁じられています。
+
+---
 
 ## 概要
 本ドキュメントは、Fusion 360 向けの MCP (Model Context Protocol) サーバーと AI エージェント（Antigravity）との連携に関する仕様をまとめたものです。
