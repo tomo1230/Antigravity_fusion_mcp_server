@@ -1,20 +1,19 @@
 # Antigravity 連携用 Fusion 360 MCP サーバー 仕様書
 
 ## 概要
-本ドキュメントは、カレントワークスペースの `d:\fusion\Antigravity_fusion_mcp_server` に配置された Fusion 360 向けの MCP (Model Context Protocol) サーバーと AI エージェント（Antigravity）との連携に関する仕様をまとめたものです。
+本ドキュメントは、Fusion 360 向けの MCP (Model Context Protocol) サーバーと AI エージェント（Antigravity）との連携に関する仕様をまとめたものです。
 既存の Gemini MCP 設定を参照し、Antigravity でも同様のツール群を利用できるように環境を構築しました。
 
 ## 構成と設定ファイル
 
 ### 1. MCP サーバー プログラム
-*   **ファイルパス**: `d:\fusion\Antigravity_fusion_mcp_server\fusion_mcp_server.js`
-*   **元のソース**: `d:\fusion\gemini_fusion_mcp_server\fusion_mcp_server.js`
+*   **ファイルパス**: `C:\Antigravity_fusion_mcp_server\fusion_mcp_server.js`
 *   **動作環境**: Node.js
-*   **バージョン**: `v 0.7.80 ベータ版 Beta version 2025.08.08`
+*   **バージョン**: `v 0.7.80 ベータ版 Beta version 2026.03.01`
 *   **名前**: `fusion-mcp-server-complete`
 
 ### 2. Antigravity MCP 連携設定
-*   **ファイルパス**: `C:\Users\tomo123\.gemini\antigravity\mcp_config.json`
+*   **ファイルパス**: `C:\Users\[Windows User Name]\.gemini\antigravity\mcp_config.json`
 *   **設定内容**:
     Antigravity が起動時に外部の MCP サーバーを読み込むための設定です。
     ```json
@@ -23,7 +22,7 @@
         "fusion": {
           "command": "node",
           "args": [
-            "d:\\fusion\\Antigravity_fusion_mcp_server\\fusion_mcp_server.js"
+            "C:\\Antigravity_fusion_mcp_server\\fusion_mcp_server.js"
           ]
         }
       }
