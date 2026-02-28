@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "fusion": {
+      "command": "node",
+      "args": ["C:\\Antigravity_fusion_mcp_server\\fusion_mcp_server.js"]
+    }
+  }
+}
