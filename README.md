@@ -45,7 +45,7 @@
 *   Antigravity は標準入出力 (`stdio`) を使用して MCP サーバーと通信します。
 *   MCP サーバーは `@modelcontextprotocol/sdk/server/stdio.js` の `StdioServerTransport` を利用しています。
 
-![Uploading FusionMcpServer.png…]()
+<img width="749" height="863" alt="Image" src="https://github.com/user-attachments/assets/b8087a14-b7a8-4935-93c4-14f466e54fb4" />
 
 ## Fusion 360 側とのコマンド連携の仕組み
 MCP サーバー（Node.jsプロセス）と実際の Fusion 360 自体とのデータのやり取りは、ローカルのテキストファイル（JSON形式）を介して行われます。
